@@ -41,11 +41,11 @@ function BookGenreList() {
   if (error) return <Typography>Error: {(error as Error).message}</Typography>;
 
   const handleEdit = (bookGenreId: number) => {
-    router.push(`/bookGenres/edit/${bookGenreId}`);
+    router.push(`/book-genres/edit/${bookGenreId}`);
   };
 
   const handleCreate = () => {
-    router.push('/bookGenres/create');
+    router.push('/book-genres/create');
   };
 
   const handleDelete = async (bookGenreId: number) => {

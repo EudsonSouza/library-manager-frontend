@@ -1,4 +1,4 @@
-import BookGenreList from '../components/bookgenres/BookGenreList'
+import BookGenreList from '../components/book-genres/BookGenreList'
 
 export default function BookGenrePage() {
   return (
