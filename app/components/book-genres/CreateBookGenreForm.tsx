@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 import { TextField, Button } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
-import {FormContainer, StyledButton} from '@/app/components/authors/styles'
+import {FormContainer, StyledButton} from '@/app/styles/formStyledComponents'
 
 
 interface IFormInput {

@@ -7,7 +7,8 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
 import { TextField, CircularProgress, Typography } from '@mui/material'
 import { useRouter } from 'next/navigation'
-import { FormContainer, StyledButton } from '@/app/components/authors/styles'
+
+import {FormContainer, StyledButton} from '@/app/styles/formStyledComponents'
 
 interface BookGenre {
   id: number
@@ -33,7 +34,7 @@ function UpdateBookGenreForm({ bookGenreId }: { bookGenreId: number }) {
 
   const updateBookGenreMutation = useMutation({
     mutationFn: (data: IFormInput) => 
-      fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/bookGenre`, {
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/bookGenre/${bookGenreId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: bookGenreId, name: data.name }),

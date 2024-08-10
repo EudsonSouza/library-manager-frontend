@@ -1,4 +1,3 @@
-// src/components/common/GenericForm.tsx
 import React from 'react';
 import { useForm, SubmitHandler, FieldValues, DefaultValues, UseFormProps } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
